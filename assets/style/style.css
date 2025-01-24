@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    padding: 2rem 7%;
+}
+
+header .logo img{
+    width: 100px;
+}
+
+header .logo h2{
+    margin-bottom: 2rem;
+}
+
+header .logo .typing,
+.typed-cursor{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0D92F4;
+}
+
+header .logo .text{
+    text-align: left;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li a{
+    position: relative;
+    padding-bottom: 5px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #213555;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 70%;
+}
+
+nav ul li a.active {
+    color: #213555;
+    font-weight: bold;
+}
+
+.search input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+main .content-main{
+    display: flex;
+    padding: 2rem 7%;
+    gap: 20px;
+}
+
+main article{
+    flex: 2;
+}
+
+main article img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+main article p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+main article .title{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+main article h2{
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+main aside{
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main aside h2{
+    color: #000;
+}
+
+main aside p{
+    margin-bottom: 8px;
+}
+
+main aside p a{
+    text-decoration: underline;
+}
+
+main aside p b{
+    font-weight: 600;
+}
+
+main aside .social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+main aside .social-media a i{
+    font-size: 1.8rem;
+    color: #000;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+/* Style about */
+
+.about{
+    margin-top: 80px;
+}
+
+.content-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-about .text p{
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.content-about .text .cta{
+    background-color: #213555;
+    color: #fff;
+    padding: 10px 2rem;
+    border-radius: 2px;
+}
+
+.content-about img{
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Style Kegiatan */
+
+.kegiatan{
+    margin-top: 80px;
+}
+
+.kegiatan-kampung h2{
+    margin-bottom: 2rem;
+}
+
+.content-kegiatan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.content-kegiatan .card{
+    background-color: #F5F5F5;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 5px;
+    flex-basis: 32%;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.content-kegiatan .card:hover{
+    transform: scale(1.05);
+}
+
+.content-kegiatan .card img{
+    max-width: 100%;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-kegiatan .card .details{
+    padding: 20px;
+}
+
+.content-kegiatan .card .details .rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-kegiatan .card .details .rating a{
+    color: #000;
+}
+
+.content-kegiatan .card .details .rating a:hover{
+    text-decoration: underline;
+}
+
+.content-kegiatan .card .details .rating .star{
+    color: #F39C12;
+}
+
+.kegiatan .kegiatan-kampung .content-kegiatan .view{
+    margin: 20px auto;
+    color: #fff;
+    background-color: #213555;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+}
+
+/* Style Kontak */
+
+.contact{
+    margin-top: 80px;
+}
+
+.contact .image img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact .contact-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact .contact-container #contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.contact .contact-container #contact-form label{
+    font-weight: 600;
+    color: #333;
+}
+.contact .contact-container #contact-form input,
+.contact .contact-container #contact-form textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact .contact-container #contact-form input:focus,
+.contact .contact-container #contact-form textarea:focus{
+    outline: none;
+    border-color: #333;
+}
+
+.contact .contact-container #contact-form button{
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #213555;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style Footer */
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #213555;
+    color: #fff;
+}
+
+/* Back to Top */
+
+.back-to-top{
+    width: 50px;
+    height: 50px;
+    background-color: #213555;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.about,
+.kegiatan,
+.contact{
+    scroll-margin-top: 80px;
+}
+
+
+/* Reponsive Hamburger Menu */
+
+.menu-icon{
+    font-size: 28px;
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    header .logo{
+        margin-top: 5rem;
+    }
+    nav{
+        flex-wrap: wrap;
+        background-color: #fff;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        padding: 2rem 7%;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul.hidden{
+        display: none;
+    }
+    nav ul li{
+        margin: 1rem 0;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+    nav .search{
+        display: none;
+    }
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+    header .logo h1{
+        font-size: 1.7rem;
+    }
+    header .logo .typing{
+        font-size: 1.5rem;
+    }
+    main .content-main{
+        flex-direction: column;
+        padding: 2rem 5%;
+        gap: 20px;
+    }
+    article p{
+        font-size: 1.2rem;
+        margin: 0 auto;
+        line-height: 1.5;
+        text-align: justify;
+        margin-top: 2rem;
+    }
+    .content-about{
+        flex-direction: column;
+        text-align: left;
+    }
+    .content-about .text p{
+        font-size: 1rem;
+        margin: 0 auto;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .content-about .text .cta{
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+    }
+    .content-kegiatan .card{
+        flex-basis: 100%;
+    }
+    .content-kegiatan .card img{
+        height: 30vh;
+    }
+}
